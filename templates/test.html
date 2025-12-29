@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MCQ Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2>MCQ Test</h2>
+
+<form method="POST">
+{% for q in questions %}
+<div class="question">
+    <p><b>{{ loop.index }}. {{ q.question }}</b></p>
+    {% for option in q.options %}
+        <label>
+            {% if q.type == "multiple" %}
+                <input type="checkbox" name="{{ q.id }}" value="{{ option }}">
+            {% else %}
+                <input type="radio" name="{{ q.id }}" value="{{ option }}" required>
+            {% endif %}
+            {{ option }}
+        </label><br>
+    {% endfor %}
+</div>
+{% endfor %}
+<button type="submit">Submit Test</button>
+</form>
+
+{% if submitted %}
+<hr>
+<h3>Result</h3>
+<h4>Score: {{ score }} / {{ total }}</h4>
+
+{% for r in result %}
+<div class="result">
+    <p><b>{{ loop.index }}. {{ r.question }}</b></p>
+    <p><b>Your Selected Answer:</b> {{ r.selected | join(", ") if r.selected else "Not Answered" }}</p>
+    <p><b>Correct Answer:</b> {{ r.correct | join(", ") }}</p>
+</div>
+{% endfor %}
+{% endif %}
+
+</body>
+</html>
