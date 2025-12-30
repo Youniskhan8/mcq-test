@@ -266,7 +266,7 @@ questions = [
     "Download and install a third-party application from the ServiceNow Store",
     "Use the Install button on the application record",
     "Install from the Application Repository",
-    "Import an application from an XML filee"
+    "Import an application from an XML file"
   ],
   "answer": [
     "Download and install a third-party application from the ServiceNow Store",
