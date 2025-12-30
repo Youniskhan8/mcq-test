@@ -19,7 +19,7 @@ questions = [
 ,
    {
   "id": 2,
-  "question": "What are the features of Flow Designer?",
+  "question": "What are the features of Flow Designer? (Choose three.)",
   "type": "multiple",
   "options": [
     "Add stages to a flow",
@@ -82,7 +82,7 @@ questions = [
 },
 {
   "id": 6,
-  "question": "ExportItem table is extended from Item table with an additional column ItemCountry. Which fields are available in the ExportItem table?",
+  "question": "Exportitem table is extended from Item Table with the additional column of ItemCountry added. The Item table contains the columns ItemName and ItemQty. Which fields are available in the ExportItem Table?",
   "type": "single",
   "options": [
     "Only ItemCountry",
@@ -97,7 +97,7 @@ questions = [
 ,
 {
   "id": 7,
-  "question": "What data types of Flow Variables are supported to store record data?",
+  "question": "What data types of Flow Variables are supported to store record data?(choose three)",
   "type": "multiple",
   "options": [
     "Choice",
@@ -129,7 +129,7 @@ questions = [
 ,
 {
   "id": 9,
-  "question": "Which options are strategies for debugging client-side scripts?",
+  "question": "Which options are strategies for debugging client-side scripts? (Choose two.) ",
   "type": "multiple",
   "options": [
     "g_form.addInfoMessage()",
@@ -145,7 +145,7 @@ questions = [
 ,
 {
   "id": 10,
-  "question": "In a privately-scoped application, which methods are used for logging messages in server-side scripts?",
+  "question": "In a privately-scoped application, which methods are used for logging messages in server-side scripts? (Choose two.) ",
   "type": "multiple",
   "options": [
     "gs.logError()",
@@ -162,7 +162,7 @@ questions = [
 ,
 {
   "id": 11,
-  "question": "When creating an application through the Guided Application Creator, what are the options for creating a table?",
+  "question": "When creating an application through the Guided Application Creator, what are the options for creating a table? (Choose three.) ",
   "type": "multiple",
   "options": [
     "Run import jobs",
@@ -182,7 +182,7 @@ questions = [
 ,
 {
   "id": 12,
-  "question": "Which database operations can be controlled with Application Access?",
+  "question": "Which database operations can be controlled with Application Access? (Choose two.)",
   "type": "multiple",
   "options": [
     "Query",
@@ -198,16 +198,16 @@ questions = [
 ,
 {
   "id": 13,
-  "question": "Which is an example of when an application might use a Scheduled Script Execution?",
+  "question": "Which is an example of when an application might use a Scheduled Script Execution (Scheduled Job)?",
   "type": "single",
   "options": [
-    "Run a client-side script at the same time every day",
-    "Query the database daily to look for unassigned records",
+    "The application needs to run a client-side script at the same time every day.",
+    " The application needs to query the database every day to look for unassigned records",
     "Display a custom welcome message when a user logs in",
     "Validate form input fields before record submission"
   ],
   "answer": [
-    "Query the database daily to look for unassigned records"
+    " The application needs to query the database every day to look for unassigned records"
   ]
 }
 ,
@@ -216,13 +216,13 @@ questions = [
   "question": "What field type would you select if you want to query records from another table on a form?",
   "type": "single",
   "options": [
-    "Date",
-    "Phone Number",
-    "String",
-    "Reference"
+    "Use the Date field type",
+    "Use the Phone Number field type. ",
+    "Use the String field type",
+    "Use the Reference field type"
   ],
   "answer": [
-    "Reference"
+    "Use the Reference field type"
   ]
 }
 ,
@@ -258,20 +258,20 @@ questions = [
 ,
 {
   "id": 17,
-  "question": "Which methods can be used to install an application on a ServiceNow instance?",
+  "question": "Which methods can be used to install an application on a ServiceNow instance?(Choose three.)",
   "type": "multiple",
   "options": [
     "Install from the Google Play Store",
     "Download from Stack Overflow",
-    "Download and install from the ServiceNow Store",
+    "Download and install a third-party application from the ServiceNow Store",
     "Use the Install button on the application record",
     "Install from the Application Repository",
-    "Import from an XML file"
+    "Import an application from an XML filee"
   ],
   "answer": [
-    "Download and install from the ServiceNow Store",
+    "Download and install a third-party application from the ServiceNow Store",
     "Install from the Application Repository",
-    "Import from an XML file"
+    "Import an application from an XML file"
   ]
 }
 ,
@@ -306,7 +306,7 @@ questions = [
 },
 {
   "id": 20,
-  "question": "Which items are valid UI Action types in ServiceNow?",
+  "question": "Which items are valid UI Action types in ServiceNow?(Choose three.)",
   "type": "multiple",
   "options": [
     "List banner button",
@@ -328,28 +328,28 @@ questions = [
   "question": "What occurs when an existing table is extended in ServiceNow?",
   "type": "single",
   "options": [
-    "The parent table's Access Controls are ignored",
-    "The new table does not inherit fields",
-    "All required behaviors must be scripted",
-    "The new table inherits the functionality of the parent table"
+    "The parent table's Access Controls are ignored when determining access to the new table's records and field",
+    "The new table does not inherit any of the fields from the parent table",
+    "You must script and configure all required behaviors",
+    "The new table inherits the functionality built into the parent table"
   ],
   "answer": [
-    "The new table inherits the functionality of the parent table"
+    "The new table inherits the functionality built into the parent table"
   ]
 }
 ,
 {
   "id": 22,
-  "question": "Which statement is true based on the Application Access configuration described for MyAppTable?",
+  "question": "An application called My App has a table, MyAppTable, with this Application Access configuration: Accessible from: All application scopes Can read: Selected - Can delete: Not selected - Allow configuration: Selected - Which of the following is true based on this configuration",
   "type": "single",
   "options": [
-    "A developer in another scoped app can delete records",
-    "A developer in My App scope can delete records",
-    "Any developer can delete records",
+    " An application developer working in another privately scoped application can write a Business Rule for the MyAppTable table which successfully deletes all records from the MyAppTable table ",
+    "An application developer working in the My App scope can write a Business Rule for the MyAppTable table which successfully deletes all records from the MyAppTable table ",
+    "Any Application developer can write a Business Rule which successfully deletes all records from the MyAppTable",
     "No Business Rule can delete records"
   ],
   "answer": [
-    "A developer in My App scope can delete records"
+    "An application developer working in the My App scope can write a Business Rule for the MyAppTable table which successfully deletes all records from the MyAppTable table "
   ]
 }
 ,
@@ -373,48 +373,50 @@ questions = [
   "question": "How can Administrators expand the list of supported file types for code search in ServiceNow Studio?",
   "type": "single",
   "options": [
-    "Modify the default code search table",
-    "Configure metadata synchronization",
-    "Create a new code search group",
-    "Add new file types to a custom search group"
+    "By Modify the default code search table",
+    "By Configure metadata synchronization",
+    "By Create a new code search group",
+    "By Add new file types to a custom search group"
   ],
   "answer": [
-    "Add new file types to a custom search group"
+    "By Add new file types to a custom search group"
   ]
 }
 ,
 {
   "id": 25,
-  "question": "What happens if a record producer script aborts the record generation process?",
+  "question": "What happens if a record producer script aborts the record generation process in ServiceNow?",
   "type": "single",
   "options": [
-    "An error message is displayed to the user",
-    "Record is generated anyway",
-    "User is redirected to confirmation page",
-    "Process ends without notification"
+    "Record creation displays an error message to the user",
+    "Record is not generated in the Item Produced Record table",
+    "Record creation is redirected to a confirmation page",
+    "Record creation terminates without notifying the user"
   ],
   "answer": [
-    "An error message is displayed to the user"
+    "Record creation displays an error message to the user"
   ]
 }
+
 ,
 {
   "id": 26,
   "question": "What is a function of an update set in ServiceNow Studio?",
   "type": "single",
   "options": [
-    "Track system performance",
-    "Create new custom applications",
-    "Manage production configurations",
-    "Group configuration changes for transfer"
+    "To track and monitor system performance metrics",
+    "To create new custom applications",
+    "To manage configurations directly in a production environment",
+    "To group configuration changes for transfer between instances"
   ],
   "answer": [
-    "Group configuration changes for transfer"
+    "To group configuration changes for transfer between instances"
   ]
 }
+
 ,{
   "id": 27,
-  "question": "How can an application respond to an Event triggered by the gs.eventQueue() method?",
+  "question": "How can an application respond to an Event triggered by the gs.eventQueue() method?(choose two)",
   "type": "multiple",
   "options": [
     "Client Script",
@@ -446,7 +448,7 @@ questions = [
 ,
 {
   "id": 29,
-  "question": "What is a reason for building a custom application?",
+  "question": "What is a reason for building a custom application?(choose two)",
   "type": "multiple",
   "options": [
     "Avoid using application repository",
@@ -462,20 +464,21 @@ questions = [
 ,
 {
   "id": 30,
-  "question": "What can a developer do with REST API Explorer?",
+  "question": "What can a developer do with REST API Explorer?(choose two)",
   "type": "multiple",
   "options": [
-    "Practice REST with public providers",
-    "Convert REST Message functions",
-    "Find learning resources",
-    "Create sample REST request code",
+    "Practice using REST to interact with public data providers",
+    "Convert REST Message functions to REST methods",
+    "Find resources on the web for learning about REST",
+    "Create sample code for sending REST requests to ServiceNow",
     "Test API endpoints on ServiceNow"
   ],
   "answer": [
-    "Create sample REST request code",
+    "Create sample code for sending REST requests to ServiceNow",
     "Test API endpoints on ServiceNow"
   ]
 }
+
 ,
 {
   "id": 31,
@@ -535,76 +538,81 @@ questions = [
 }
 ,{
   "id": 36,
-  "question": "Why are application files important?",
+  "question": "Why are application files important?(choose two)",
   "type": "multiple",
   "options": [
-    "Store user credentials",
-    "Define app logic and behavior",
-    "Restrict application access",
-    "Monitor performance"
+    "They store user credentials for the application",
+    "They define the app logic and behavior",
+    "They restrict access to the application",
+    "They monitor app performance metrics"
   ],
   "answer": [
-    "Define app logic and behavior",
-    "Restrict application access"
-  ]
-},{
-  "id": 37,
-  "question": "What happens when an existing table is extended?",
-  "type": "multiple",
-  "options": [
-    "All behavior must be newly scripted",
-    "Specific parent fields can be selected",
-    "Parent table Access Controls are evaluated",
-    "Functionality is inherited",
-    "All fields are inherited",
-    "Dictionary entries include parent fields"
-  ],
-  "answer": [
-    "Parent table Access Controls are evaluated",
-    "All fields are inherited"
+    "They define the app logic and behavior",
+    "They restrict access to the application"
   ]
 }
+,{
+  "id": 37,
+  "question": "What happens when an existing table is extended?(choose two)",
+  "type": "multiple",
+  "options": [
+    "All required behavior must be newly scripted and configured from the new table",
+    "Specific fields from the parent table can be selected to be inherited",
+    "Parent table Access Controls are also evaluated while determining access for the new table",
+    "The new table inherits the functionality built into the parent table",
+    "The new table inherits all the fields from the parent table",
+    "Dictionary entries for the new table also include records for fields from the parent table"
+  ],
+  "answer": [
+    "Parent table Access Controls are also evaluated while determining access for the new table",
+    "The new table inherits all the fields from the parent table"
+  ]
+}
+
 ,{
   "id": 38,
   "question": "When can the value \"Protected\" be leveraged in a Protected Policy for a Script Include?",
   "type": "single",
   "options": [
-    "Admin enables the policy",
-    "System property is true",
-    "Application downloaded from App Store",
-    "Protected_edit role edits Script Include"
+    "A user with the admin role enables the Policy option",
+    "The glide.app.apply_protection system property is set to \"True\"",
+    "The application is downloaded from the ServiceNow App Store",
+    "A user with the protected_edit role edits the Script Include"
   ],
   "answer": [
-    "Application downloaded from App Store"
+    "The application is downloaded from the ServiceNow App Store"
   ]
-},{
+}
+,{
   "id": 39,
-  "question": "What syntax indicates passing a variable during a REST Message function call?",
+  "question": "When configuring a REST Message, what syntax indicates passing a variable during a function call?",
   "type": "single",
   "options": [
     "${variable_name}",
-    "<variable_name>",
+    "< variable_name >",
     "current.variable_name",
-    "<variable_name>.do?WSDL"
+    "< variable_name >.do?WSDL"
   ],
   "answer": [
     "${variable_name}"
   ]
 }
+
 ,{
   "id": 40,
-  "question": "What does the Read-only protection policy for Script Includes allow?",
+  "question": "What does the \"Read-only\" protection policy for Script Includes allow in a custom application?",
   "type": "single",
   "options": [
-    "Developers can customize it",
-    "Only admins can delete it",
-    "Developers can view but not modify",
-    "Only admins can edit it"
+    "Application developers can customize the Script Include",
+    "Only administrators can delete the Script Include",
+    "Application developers can view the script logic but not change it",
+    "Only administrators can edit the Script Include"
   ],
   "answer": [
-    "Developers can view but not modify"
+    "Application developers can view the script logic but not change it"
   ]
 }
+
 ,{
   "id": 41,
   "question": "Which client-side scoped API class can be used as a replacement for GlideRecord?",
@@ -635,26 +643,27 @@ questions = [
 }
 ,{
   "id": 43,
-  "question": "How can a developer review application artifacts included in a published app?",
+  "question": "An app developer wants to review the scripts, reports, and other application artifacts included in a published app. What steps are taken to review those items?",
   "type": "single",
   "options": [
-    "Global search",
-    "Update Sets list",
-    "Application Files related list",
-    "Open artifacts individually"
+    "Enter the name of the Application in the Global search field",
+    "Open the list of Update Sets for the instance",
+    "Examine the Application Files Related List in the application to be published",
+    "Open the artifact records individually to verify the value in the Application field"
   ],
   "answer": [
-    "Application Files related list"
+    "Examine the Application Files Related List in the application to be published"
   ]
 }
+
 ,
 {
   "id": 44,
-  "question": "Which one of the following is true about UI Policy execution?",
+  "question": "Which one of the following is true?",
   "type": "single",
   "options": [
     "A UI Policy's Actions execute before the UI Policy's Scripts",
-    "The execution order is determined at runtime",
+    "The execution order for a UI Policy's Scripts and Actions is determined at runtime",
     "A UI Policy's Scripts execute before the UI Policy's Actions",
     "A UI Policy's Actions and Scripts execute at the same time"
   ],
@@ -662,11 +671,12 @@ questions = [
     "A UI Policy's Actions execute before the UI Policy's Scripts"
   ]
 }
+
 ,
 
 {
   "id": 45,
-  "question": "What are some considerations to document as part of the business process when defining business requirements?",
+  "question": "It is best practice to define the business requirements and the process(es) an application will manage as part of the application development plan. What are some of the considerations to document as part of the business process?",
   "type": "single",
   "options": [
     "Business problem, data input/output, users/stakeholders, and process steps",
@@ -678,6 +688,7 @@ questions = [
     "Business problem, data input/output, users/stakeholders, and process steps"
   ]
 }
+
 ,
 {
   "id": 46,
@@ -696,7 +707,7 @@ questions = [
 ,
 {
   "id": 47,
-  "question": "Which client-side scripts apply to Record Producers?",
+  "question": "Which one of the following client-side scripts apply to Record Producers?",
   "type": "single",
   "options": [
     "Catalog Client Scripts and Catalog UI Policies",
@@ -708,10 +719,11 @@ questions = [
     "Catalog Client Scripts and Catalog UI Policies"
   ]
 }
+
 ,
 {
   "id": 48,
-  "question": "Which script types execute on the server?",
+  "question": "Which script types execute on the server? (Choose three.)",
   "type": "multiple",
   "options": [
     "Business Rule",
@@ -756,7 +768,7 @@ questions = [
 }
 ,{
   "id": 51,
-  "question": "Which HTTP method is NOT part of the ServiceNow REST API?",
+  "question": "Which of the following methods is NOT part of the ServiceNow REST API?",
   "type": "single",
   "options": [
     "COPY",
@@ -770,21 +782,22 @@ questions = [
 }
 ,{
   "id": 52,
-  "question": "Which statement is NOT true for the Form Designer?",
+  "question": "Which of the following statements is NOT true for the Form Designer?",
   "type": "single",
   "options": [
-    "Sections are added from the Field Types tab",
-    "Fields can be dragged from the Fields tab",
-    "Fields can be removed using the Delete button",
-    "New fields can be created from Field Types"
+    "To add a section to the form layout, drag it from the Field Types tab to the desired destination on the form",
+    "To add a field to the form layout, drag the field from the Fields tab to the desired destination on the form",
+    "To remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button",
+    "To create a new field on a form’s table, drag the appropriate data type from the Field Types tab to the form and then configure the new field"
   ],
   "answer": [
-    "Sections are added from the Field Types tab"
+    "To add a section to the form layout, drag it from the Field Types tab to the desired destination on the form"
   ]
 }
+
 ,{
   "id": 53,
-  "question": "What records are used to track cross-scope access requests?",
+  "question": "What records are used to track cross-scope applications or scripts that request access to an application, application resource, or event? ",
   "type": "single",
   "options": [
     "Restricted caller access records",
@@ -808,22 +821,23 @@ questions = [
   "answer": [
     "Create a user"
   ]
-}
-
-,{
+},
+{
   "id": 55,
-  "question": "Why create Applications in ServiceNow?",
+  "question": "Why create Applications in ServiceNow? a) To replace outdated, inadequate, custom business applications and processes b) To extend service delivery and management to all enterprise departments c) To allow users full access to all ServiceNow tables, records, and fields d) To extend the value of ServiceNow  ",
   "type": "single",
   "options": [
-    "To replace outdated apps, extend service delivery, and extend ServiceNow value",
-    "To replace apps and allow full table access",
-    "To replace apps and allow unrestricted access",
-    "To extend service delivery only"
+    "a, b, and d",
+    "a, b, c, and d",
+    "a, b, and c",
+    "b, c, and d"
   ],
   "answer": [
-    "To replace outdated apps, extend service delivery, and extend ServiceNow value"
+    "a, b, and d"
   ]
 }
+
+
 ,{
   "id": 56,
   "question": "Client-side scripts manage what?",
@@ -840,7 +854,7 @@ questions = [
 }
 ,{
   "id": 57,
-  "question": "Which publishing methods are supported by ServiceNow?",
+  "question": "nce an application is ready to share, which of the following methods of publishing are supported by ServiceNow? (Choose three.)",
   "type": "multiple",
   "options": [
     "Publish to an application repository",
@@ -887,7 +901,7 @@ questions = [
 }
 ,{
   "id": 60,
-  "question": "Which business requirements should be documented as part of the application development plan?",
+  "question": "Which business requirements and process(es) should be documented as part of the application development plan? (Choose four.) ",
   "type": "multiple",
   "options": [
     "Available licenses",
@@ -907,7 +921,7 @@ questions = [
 }
 ,{
   "id": 61,
-  "question": "Which objects are used as part of the client-side scripting API?",
+  "question": "Which objects are used as part of the client-side scripting API? (Choose two.)",
   "type": "multiple",
   "options": [
     "gs",
@@ -922,7 +936,7 @@ questions = [
   ]
 },{
   "id": 62,
-  "question": "When creating application tables, which other role does an application typically have?",
+  "question": "When creating application tables, a user role is automatically added to the table record. Which other role does an application typically have?",
   "type": "single",
   "options": [
     "Application Super User",
@@ -947,11 +961,5 @@ questions = [
     "Group [sys_user_group]"
   ]
 }
-
-
-
-
-
-
 
 ]
