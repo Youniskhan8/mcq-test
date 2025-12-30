@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>mcq Test</title>
+    <title>MCQ Test</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
 <h2>MCQ Test</h2>
 
+{% if not submitted %}
+<!-- ================= QUESTIONS FORM ================= -->
 <form method="POST">
+
 {% for q in questions %}
 <div class="question">
     <p><b>{{ loop.index }}. {{ q.question }}</b></p>
+
     {% for option in q.options %}
         <label>
             {% if q.type == "multiple" %}
@@ -24,21 +28,38 @@
     {% endfor %}
 </div>
 {% endfor %}
+
 <button type="submit">Submit Test</button>
 </form>
 
-{% if submitted %}
-<hr>
+{% else %}
+<!-- ================= RESULT ONLY ================= -->
+
 <h3>Result</h3>
 <h4>Score: {{ score }} / {{ total }}</h4>
 
 {% for r in result %}
-<div class="result">
+<div class="result-box
+    {% if r.selected|sort == r.correct|sort %}
+        correct-box
+    {% else %}
+        wrong-box
+    {% endif %}
+">
     <p><b>{{ loop.index }}. {{ r.question }}</b></p>
-    <p><b>Your Selected Answer:</b> {{ r.selected | join(", ") if r.selected else "Not Answered" }}</p>
-    <p><b>Correct Answer:</b> {{ r.correct | join(", ") }}</p>
+
+    <p><b>Your Selected Answer:</b><br>
+        {{ r.selected | join(", ") if r.selected else "Not Answered" }}
+    </p>
+
+    <p><b>Correct Answer:</b><br>
+        {{ r.correct | join(", ") }}
+    </p>
 </div>
 {% endfor %}
+
+<a href="/" class="retry-btn">Retry Test</a>
+
 {% endif %}
 
 </body>
