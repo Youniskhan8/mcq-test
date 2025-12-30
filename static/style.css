@@ -9,3 +9,31 @@ button {
     padding: 10px 20px;
     font-size: 16px;
 }
+.result-box {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.correct-box {
+    background-color: #e6ffe6;   /* light green */
+    border: 2px solid #2ecc71;
+}
+
+.wrong-box {
+    background-color: #ffe6e6;   /* light red */
+    border: 2px solid #e74c3c;
+}
+.retry-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.retry-btn:hover {
+    background-color: #2980b9;
+}
