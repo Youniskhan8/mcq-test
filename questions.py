@@ -949,17 +949,304 @@ questions = [
   ]
 },{
   "id": 63,
-  "question": "Group records are stored in which table?",
+  "question": "The option in Table configuration that allows this table to be extended from?",
   "type": "single",
   "options": [
-    "Group [sn_user_group]",
-    "Group [sys_user_group]",
-    "Group [s_sys_group]",
-    "Group [u_sys_group]"
+    "Extensible",
+    "Extended By",
+    "Can be Extended"
   ],
   "answer": [
-    "Group [sys_user_group]"
+    "Extensible"
   ]
 }
+,{
+  "id": 64,
+  "question": "Which of the following actions is not supported by Studio?",
+  "type": "single",
+  "options": [
+    "Download only the required session logs.",
+    "Integrate with source control",
+    "Enable context menu options to modify data",
+    "Format code indentation with JS Beautify"
+  ],
+  "answer": [
+    "Enable context menu options to modify data"
+  ]
+},{
+  "id": 65,
+  "question": "Which method is used in emulating mobile for testing?",
+  "type": "single",
+  "options": [
+    "$tablet.do",
+    "$mobile.do",
+    "$m.do",
+    "$t.do"
+  ],
+  "answer": [
+    "$m.do"
+  ]
+}
+,{
+  "id": 66,
+  "question": "Which of the following modules enables security rule debugging?",
+  "type": "single",
+  "options": [
+    "System Diagnostics > Debugging > Debug Security Rules",
+    "Access Control > Debugging > Debug Security Rule",
+    "System Security > Debugging > Debug Security Rules",
+    "System Security > Session Debug > Debug Security Rules",
+    "System Diagnostics > Session Debug > Debug Security Rules"
+  ],
+  "answer": [
+    "System Security > Debugging > Debug Security Rules"
+  ]
+},{
+  "id": 67,
+  "question": "What does the code search feature do in the studio?",
+  "type": "multiple",
+  "options": [
+    "Searching in a business rule",
+    "Searching in all applications",
+    "Search from a list of applications",
+    "Searching in your application"
+  ],
+  "answer": [
+    "Searching in a business rule",
+    "Searching in all applications",
+    "Searching in your application"
+  ]
+}
+,{
+  "id": 68,
+  "question": "What are the 2 core base tables from which all other tables are extended in ServiceNow?",
+  "type": "single",
+  "options": [
+    "incident and cmdb_ci",
+    "incident and cmdb_rel_ci",
+    "task and cmdb_model",
+    "task and cmdb"
+  ],
+  "answer": [
+    "task and cmdb"
+  ]
+},{
+  "id": 69,
+  "question": "When creating an application via Guided Application Creator, which of the following is NOT a user experience options?",
+  "type": "multiple",
+  "options": [
+    "Portal",
+    "Classic",
+    "Workplace",
+    "Mobile"
+  ],
+  "answer": [
+    "Portal",
+    "Workplace"
+  ]
+}
+,{
+  "id": 70,
+  "question": "An application has a table named MyTable with the following three fields: field1, field2, field3. Table.none is set for READ for the Admin and itil roles. Table.field3 is set for the READ by the Admin role only. What with the itil role be able to read?",
+  "type": "single",
+  "options": [
+    "field1, field2, field3",
+    "field1, field2",
+    "field1, field3",
+    "field2, field3"
+  ],
+  "answer": [
+    "field1, field2"
+  ]
+}
+,{
+  "id": 71,
+  "question": "Which of the following would not be good fit for an application to run on the ServiceNow instance?",
+  "type": "single",
+  "options": [
+    "Virtual Reality Gaming application",
+    "Facilities Management application",
+    "A meeting room scheduling application",
+    "Billing & Cost Management application"
+  ],
+  "answer": [
+    "Virtual Reality Gaming application"
+  ]
+},
+{
+  "id": 72,
+  "question": "When debugging a script a developer can log breakpoints or conditional log points to log messages to the console at specific lines, and remove log points when they are done debugging them. which system property must be set to true to enable log points?",
+  "type": "single",
+  "options": [
+    "glide.debug.log_point",
+    "glide.debugger.log.ui",
+    "glide.ui.js_can_debug",
+    "com.glide.index_suggestion.debug"
+  ],
+  "answer": [
+    "glide.debug.log_point"
+  ]
+},{
+  "id": 73,
+  "question": "Which one of the following is NOT a GlideUser (g_user) method?",
+  "type": "single",
+  "options": [
+    "userName",
+    "getFullName()",
+    "hasRole()",
+    "hasRoleExactly()"
+  ],
+  "answer": [
+    "userName"
+  ]
+}
+,{
+  "id": 74,
+  "question": "What is true about homepages on mobile?",
+  "type": "single",
+  "options": [
+    "Same as desktop homepages without the delete option",
+    "Same as desktop homepages with the delete option",
+    "There are no homepages on mobile",
+    "Same as desktop homepages in every way"
+  ],
+  "answer": [
+    "There are no homepages on mobile"
+  ]
+}
+,{
+  "id": 75,
+  "question": "While debugging security rules, what does the blue color code indicate?",
+  "type": "single",
+  "options": [
+    "Passed",
+    "Access granted",
+    "Indicates the ACL is already in the cache and does not need to be re-evaluated",
+    "Failed",
+    "Access denied"
+  ],
+  "answer": [
+    "Indicates the ACL is already in the cache and does not need to be re-evaluated"
+  ]
+}
+,{
+  "id": 76,
+  "question": "Which of the following are steps in the generalized process for working with events?",
+  "type": "multiple",
+  "options": [
+    "Respond to the event",
+    "Write a Business Rule",
+    "Create a Scheduled Script Execution",
+    "Add an event to the Event Registry",
+    "Generate the event"
+  ],
+  "answer": [
+    "Respond to the event",
+    "Add an event to the Event Registry",
+    "Generate the event"
+  ]
+}
+,{
+  "id": 77,
+  "question": "The getCurrentDomainID() method is part of which scoped class?",
+  "type": "single",
+  "options": [
+    "GlideRecord",
+    "ScopedDCManager",
+    "Scoped Domain",
+    "Scoped GlideSession"
+  ],
+  "answer": [
+    "Scoped GlideSession"
+  ]
+}
+,{
+  "id": 78,
+  "question": "What is not true about email notifications?",
+  "type": "single",
+  "options": [
+    "What",
+    "Who",
+    "When",
+    "How"
+  ],
+  "answer": [
+    "How"
+  ]
+}
+,{
+  "id": 79,
+  "question": "What are the core activities of a Workflow?",
+  "type": "multiple",
+  "options": [
+    "Service Catalog",
+    "Timers",
+    "Notifications",
+    "Utilities",
+    "Conditions",
+    "Approvals",
+    "Test",
+    "Subflows"
+  ],
+  "answer": [
+    "Service Catalog",
+    "Notifications",
+    "Utilities",
+    "Conditions",
+    "Approvals",
+    "Subflows"
+  ]
+}
+,{
+  "id": 80,
+  "question": "Which of the following is NOT a type of annotation?",
+  "type": "single",
+  "options": [
+    "Section Details",
+    "Info Box Yellow",
+    "Info Box Red",
+    "Info Box Blue",
+    "Text",
+    "Line Separator",
+    "Section Separator"
+  ],
+  "answer": [
+    "Info Box Yellow"
+  ]
+},{
+  "id": 81,
+  "question": "Which of the below is not a valid state for a scheduled job in ServiceNow instance?",
+  "type": "single",
+  "options": [
+    "Waiting for approval",
+    "Running",
+    "Queued",
+    "Error",
+    "Ready"
+  ],
+  "answer": [
+    "Waiting for approval"
+  ]
+}
+,{
+  "id": 82,
+  "question": "Which API provides methods to translate text into multiple languages in real life?",
+  "type": "single",
+  "options": [
+    "Genius Result Answer",
+    "Genius Translation",
+    "Dynamic Result Answer",
+    "Dynamic Translation"
+  ],
+  "answer": [
+    "Dynamic Translation"
+  ]
+}
+
+
+
+
+
+
 
 ]
